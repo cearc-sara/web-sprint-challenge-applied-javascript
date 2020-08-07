@@ -24,9 +24,12 @@ axios.get('https://lambda-times-api.herokuapp.com/articles')
     .then(response => {
         const articlesArray = Object.values(response.data.articles)
         console.log(Object.values(response.data.articles))
-        articlesArray.forEach(article => {
-            const articles = cardMaker(article)
-            cardsContainer.appendChild(articles)
+        articlesArray.forEach(articles => {
+            articles.forEach(article => {
+                const articlesCard = cardMaker(article)
+            cardsContainer.appendChild(articlesCard)
+            })
+            
         })
         
     })
