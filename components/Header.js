@@ -33,5 +33,5 @@ function Header() {
 
     return header;
 }
-const headerContainer = document.querySelector('.header-conatiner')
+const headerContainer = document.querySelector('.header-container')
     headerContainer.appendChild(Header())
