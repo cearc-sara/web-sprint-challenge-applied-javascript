@@ -19,7 +19,7 @@ axios.get('https://lambda-times-api.herokuapp.com/topics')
             const topicTab = createTabs(topic)
             topicsTabs.appendChild(topicTab)
         })
-        debugger
+        
     })
     .catch(error => {
         console.log(error)
